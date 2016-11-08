@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BOOTSTRAP</title>
+  <link rel="icon" type="image/gif/png" href="img/shoe.jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+ <link rel="stylesheet" type="text/css" href="dal.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+  .modal-header, h4, .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+}
+img {
+  transition: all .2s ease-in-out;
+}
+img:hover {
+  transform: scale(1.1);
+}
+
+button  {
+    transition: all .4s ease-in-out;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+}
+
+
+
+  </style>
+
+
+</head>
+<body>
+<div class="container">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">DAL_COMFORT ZONE</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Home">Home</a></li>
+        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="About">About</a></li>
+        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Categories">Categories</a></li> 
+        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Brands">Brands</a></li>
+        <li><a class=" btn btn-phone btn-lg border" href="#"><span class="fa fa-phone">&nbsp (+234)-7066785769</span></a></li>
+         <li><a class="btn btn-envelope-o btn-lg border" href="#"><span class="fa fa-envelope-o">&nbsp dodupitan2@gmail.com</span></a></li> &nbsp 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span> Register</button></li>
+        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Login!"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+
+
+
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+      <div id="myModal" class="modal-fade" role="dialog">
+
+      <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Not a member? <a href="#">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h1><strong>Luxury<br> Shoe<br> Collections</strong></h1><br>
+         <div class="btn-group" role="group" aria-label="...">
+           <button type="button" class="btn btn-danger btn-lg">#30000</button>
+           <button type="button" class="btn btn-danger btn-lg">PURCHASE 
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+           </button>
+      </div>
+      </div>
+    <div class="col-md-6">    
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="img/spikes.jpg" alt="Louboutin spikes">
+                    <div class="carousel-caption">
+                      <h3>Black Christain Louboutin</h3>
+                      <p>The Luxury design of Louboutin with spikes</p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <img src="img/gucci.png" alt="gucci">
+                    <div class="carousel-caption">
+                      <h3>Gucci</h3>
+                      <p>Black Gucci Glossy Design</p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <img src="img/leeman.png" alt="Leeman">
+                    <div class="carousel-caption">
+                      <h3>Louis Leeman</h3>
+                      <p>Louis Leeman Luxury Shoes(Black, Brown, Blue)</p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <img src="img/Mcqueen.png" alt="Mcqueen">
+                    <div class="carousel-caption">
+                      <h3>Alexander Mcqueeen</h3>
+                      <p>Luxury Alexander Mcqueen for the Classic Man</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid">
+ <div class="row">
+    <div class="col-md-4" style="background-color:lavender;">
+      <h3>Corporate</h3>
+      <img src="img/male.jpg">
+      <h2>Total</h2>
+      <span>257 shoes</span>
+    </div>
+    <div class="col-md-4" style="background-color:lavenderblush;">
+      <h3>Cauals</h3>
+      <img src="img/female1.jpg">
+      <h2>Total</h2>
+      <span>150 shoes</span>
+    </div>
+    <div class="col-md-4" style="background-color:lavender;">
+      <h3>Sandals</h3>
+      <img src="img/kids.jpg">
+      <h2>Total</h2>
+      <span>98 shoes</span>
+    </div>
+  </div>
+</div>
+
+
+
+<a href="#"><span>&nbsp; &nbsp; &nbsp;&nbsp; <h1>SPECIAL PRODUCTS</h1></span></a>
+<!-- <a href="#"><span class="navbar-right">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <h3>VIEW ALL PRODUCTS </h3></span></a> -->
+<div class="container-fluid">
+      <div class="col-sm-3">
+        <img src="img/puma.jpg" class="thumbnail img-responsive" alt="puma">
+        <h5>PUMA FENTY</h5>
+        <button type="button" class="btn btn-danger">109.905 | GET NOW > </button> 
+        <hr>
+      </div>
+
+      <div class="col-sm-3">
+        <img src="img/yeezy.jpg" class="thumbnail img-responsive" alt="yeezy">
+        <h5>ADIDAS YEEZY</h5>
+        <button type="button" class="btn btn-danger">109.905 | GET NOW > </button>
+        <hr>
+      </div>
+
+      <div class="col-sm-3">
+        <img src="img/balenciaga.jpg" class="thumbnail img-responsive" alt="balenciaga">
+        <h5>BALENCIAGA</h5>
+        <button type="button" class="btn btn-danger">109.905 | GET NOW > </button>
+        <hr>
+      </div>
+
+      <div class="col-sm-3">
+        <img src="img/sandals.jpg" class="thumbnail img-responsive" alt="sandals">
+        <h5>ADIDAS SANDALS</h5>
+        <button type="button" class="btn btn-danger">109.905 | GET NOW > </button>
+        <hr>
+      </div>
+      </div>
+
+      <div class="container-fluid">
+
+      <div class="col-sm-3">
+        <img src="img/louboutin.jpg" class="thumbnail img-responsive" alt="louboutin">
+        <h5>CHRISTAIN LOUBOUTIN</h5>
+        <button type="button" class="btn btn-danger">109.905 | GET NOW > </button>
+        <hr>
+      </div>
+
+      <div class="col-sm-3">
+        <img src="img/zanotti.jpg" class="thumbnail img-responsive" alt="zanotti">
+        <h5>ZANOTTI</h5>
+        <button type="button" class="btn btn-danger">109.905 | GET NOW > </button>
+        <hr>
+      </div>
+
+      <div class="col-sm-3">
+        <img src="img/adidas.jpg" class="thumbnail img-responsive" alt="adidas">
+        <h5>ADIDAS</h5>
+        <button type="button" class="btn btn-danger">109.905 | GET NOW > </button>
+        <hr>
+      </div>
+
+      <div class="col-sm-3">
+        <img src="img/pacciotti.jpg" class="thumbnail img-responsive" alt="pacciotti">
+        <h5>CAESARE PACCIOTTI</h5>
+        <button type="button" class="btn btn-danger">109.905 | GET NOW > </button>
+        <hr>
+      </div>
+
+</div>
+<!-- </div> -->
+
+<div class="wrapper">
+        <footer>
+            <h3 class="text-center"><strong>DAL COMFORT ZONE </strong><span><em> &nbsp &nbsp Meeting your every need</em></span>&nbsp&nbsp&nbsp<span><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>&nbsp&nbsp<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp&nbsp<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></span></h3>
+            <div class="text-center bgd">Designed by Oluwadara .T. Odupitan</div>
+
+        </footer>
+    </div>
+</div>
+
+</body>
+</html>
